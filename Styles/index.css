@@ -1,0 +1,94 @@
+body {
+	background-color: #373536;
+	background-image: url(../Images/IndexBackground.jpg);
+	background-size: 106%;
+	background-position-y: 12%;
+	background-position-x: 0%;
+	padding: 0;
+	margin: 0;
+}
+
+* {
+	font: 16px Verdana, sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+
+.Main {
+	padding: 0;
+	margin: 0;
+}
+
+.Blur {
+	backdrop-filter: blur(3px);
+	color: #F5F5F5DD;
+	text-align: center;
+	font-size: 750%;
+	line-height: 100%;
+	position: absolute;
+	height: 70%;
+	width: 70%;
+	top: 10%;
+	left: 15%;
+	padding: 0px;
+	border-radius: 150px 150px 150px 150px;
+	z-index: -1;
+	opacity: 0%;
+}
+
+.Header {
+	background-color: #2C2C48DD;
+	color: #F5F5F5DD;
+	text-align: center;
+	font-size: 750%;
+	line-height: 100%;
+	position: absolute;
+	height: 1em;
+	width: 60%;
+	top: 20%;
+	left: 20%;
+	padding-top: 4%;
+	padding-bottom: 4%;
+	border-radius: 25px 25px 25px 25px;
+	border: 2px solid #75627EDD;
+	margin: -2px;
+}
+
+.MainButton {
+	background-color: #2C2C48DD;
+	color: #F5F5F5DD;
+	text-align: center;
+	text-decoration: underline;
+	font-size: 250%;
+	line-height: 0%;
+	position: absolute;
+	height: 2em;
+	width: 15%;
+	top: 60%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	border-radius: 25px 25px 25px 25px;
+	border: 2px solid #75627EDD;
+	margin: -2px;
+}
+
+.MainButton:hover {
+	filter: brightness(85%);
+}
+
+.MainButton:active {
+	filter: brightness(65%);
+}
+
+#AboutMe {
+	left: 20%;
+}
+
+#Education {
+	left: 42.5%;
+}
+
+#Experience {
+	right: 20%;
+}

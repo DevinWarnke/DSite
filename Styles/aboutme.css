@@ -1,0 +1,151 @@
+body {
+	background-color: #373536;
+	background-image: url(../Images/AboutMeBackground.jpg);
+	background-size: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+* {
+	font: 16px Verdana, sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+
+.Main {
+	padding: 0;
+	margin: 0;
+}
+
+.Button {
+	background-color: #2C2C48CD;
+	color: #F5F5F5DD;
+	text-align: center;
+	text-decoration: underline;
+	font-size: 125%;
+	line-height: 0%;
+	position: absolute;
+	height: 1em;
+	width: 7.5%;
+	top: 1%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	border-radius: 25px 25px 25px 25px;
+	border: 2px solid #64516DDD;
+	margin: -2px;
+}
+
+.Button:hover {
+	filter: brightness(85%);
+}
+
+.Button:active {
+	filter: brightness(65%);
+}
+
+#Home {
+	right: 17.5%;
+}
+
+#Next {
+	right: 0.5%;
+}
+
+#Back {
+	right: 9%;
+}
+
+.Header {
+	color: #F5F5F5DD;
+	text-align: center;
+	font-size: 370%;
+	line-height: 100%;
+	position: absolute;
+	height: 1em;
+	width: 60%;
+	top: 17.6%;
+	left: 20%;
+}
+
+.DescriptionBox {
+	background-color: #3C558DE2;
+	background: rgb(60,85,141);
+	background: linear-gradient(42deg, rgba(50,75,132,0.75) 20%, rgba(6,4,40,0.77) 94%);
+	color: #F5F5F5DD;
+	text-align: left;
+	line-height: 0%;
+	position: absolute;
+	height: 45%;
+	width: 64%;
+	top: 25%;
+	left: 17.5%;
+	padding-top: 1.2%;
+	padding-bottom: 1.2%;
+	padding-left: 1%;
+	border-radius: 25px 25px 25px 25px;
+	border: 2px solid #1E3057;
+	margin: -2px;
+}
+
+.Description {
+	color: #F5F5F5DD;
+	text-align: left;
+	font-size: 210%;
+	line-height: 100%;
+	position: absolute;
+	height: 100%;
+	width: 77.25%;
+	top: 1%;
+	left: 21.5%;
+	padding: 0px;
+	margin: 0px;
+}
+
+.Portrait {
+	position: absolute;
+	aspect-ratio: 365/301;
+	width: 20.5%;
+	top: 0%;
+	left: 0%;
+	padding: 0px;
+	margin: 0px;
+	border-radius: 25px 15px 15px 15px;
+	border: 2px solid #1E3057;
+	margin: -2px;
+}
+
+.ContactInfo {
+	color: #F5F5F5DD;
+	text-align: center;
+	font-size: 135%;
+	line-height: 100%;
+	position: absolute;
+	height: 1em;
+	width: 20.5%;
+	top: 45%;
+	left: 0%;
+	padding: 0px;
+	margin: 0px;
+}
+
+.ContactInfoEntry {
+	color: #F5F5F5DD;
+	text-align: left;
+	font-size: 93%;
+	line-height: 100%;
+	position: absolute;
+	height: 1em;
+	top: 50%;
+	left: 0.5%;	
+	padding: 0px;
+	margin: 0px;
+}
+
+#Phone {
+	top: 52%;
+}
+
+#Email {
+	top: 56%;
+}
