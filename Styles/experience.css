@@ -69,13 +69,13 @@ body {
 }
 
 .ExperienceBox {
-	background: linear-gradient(0deg, rgba(32,76,139,0.67) 9%, rgba(101,108,150,0.35) 46%, rgba(23,36,55,0.78) 84%);
-	color: #F5F5F5DF;
+	background: linear-gradient(104deg, rgba(23,25,41,0.77) 40%, rgba(32,35,54,0.77) 61%);
+	color: #F5F5F5DD;
 	text-align: left;
 	font-size: 150%;
 	line-height: 0%;
 	position: absolute;
-	height: 24em;
+	height: 18em;
 	width: 64%;
 	top: 25%;
 	left: 17.5%;
@@ -83,159 +83,69 @@ body {
 	padding-bottom: 1.2%;
 	padding-left: 1%;
 	border-radius: 25px 25px 25px 25px;
-	border: 3px solid #122247D3;
+	border: 3px solid #595B707D;
 	margin: -3px;
 }
 
-.CertificationLabel {
-	color: #F5F5F5DF;
-	text-align: center;
-	font-size: 85%;
-	line-height: 100%;
-	position: absolute;
-	height: 1em;
-	width: 13%;
-	top: 2%;
-	left: 25%;
-}
-
-.ExperienceLabel {
-	color: #F5F5F5DF;
-	text-align: center;
-	font-size: 85%;
-	line-height: 100%;
-	position: absolute;
-	height: 1em;
-	width: 13%;
-	top: 2%;
-	right: 25%;
-}
-
-.Certifications {
-	background-color: #28457D76;
+.JobData {
+	background-color: #2C2C48DD;
+	color: #F5F5F5DD;
 	text-align: left;
+	font-size: 145%;
 	line-height: 0%;
 	position: absolute;
-	height: 31%;
-	width: 13.4%;
-	top: 6%;
-	left: 25%;
+	height: 80%;
+	width: 23%;
+	top: 10.5%;
 	padding: 0px;
 	border-radius: 15px 15px 15px 15px;
-	border: 2px solid #122247D3;
+	border: 2px solid #595B70DD;
 	margin: -2px;
 }
 
-.Experience {
-	background-color: #28457D76;
-	color: #F5F5F5DF;
-	text-align: left;
-	line-height: 0%;
-	position: absolute;
-	height: 31%;
-	width: 13.4%;
-	top: 6%;
-	right: 25%;
-	padding: 0px;
-	border-radius: 15px 15px 15px 15px;
-	border: 2px solid #122247D3;
-	margin: -2px;
-}
-
-.ListText {
-	color: #F5F5F5DF;
-	text-align: left;
-	font-size: 100%;
-	line-height: 100%;
-	white-space: pre-wrap;
+.JobIcon {
 	position: relative;
-	height: 1em;
-	width: 100%;
-	top: 2%;
-	left: 20.5%;
-	margin-left: -8%;
-	margin-bottom: 1.5%;
-}
-
-.Project {
-	background-color: #28457DAA;
-	color: #F5F5F5DF;
-	text-align: left;
-	line-height: 0%;
-	position: absolute;
-	height: 50%;
-	width: 18%;
-	top: 44.5%;
-	padding: 0px;
-	margin: 0px;
-	border-radius: 15px 15px 15px 15px;
-	border: 2px solid #122247D3;
-	margin: -3px;
-}
-
-#Project1 {
-	left: 8%;
-}
-
-#Project2 {
-	left: 30%;
-}
-
-#Project3 {
-	left: 52%;
-}
-
-#Project4 {
-	left: 74%;
-}
-
-.ProjectIcon {
-	position: relative;
-	aspect-ratio: 266/187;
+	aspect-ratio: 365/301;
 	width: 100%;
 	top: 0%;
 	left: 0%;
 	padding: 0px;
 	border-radius: 15px 15px 0px 0px;
-	border: 2px solid #122247D3;
+	border: 2px solid #595B70DD;
 	margin: -2px;
 }
 
-.ProjectName {
-	color: #F5F5F5DF;
+.JobDataEntry {
+	color: #F5F5F5DD;
 	text-align: center;
-	font-size: 125%;
-	line-height: 100%;
-	position: absolute;
-	height: 1em;
-	width: 100%;
-	top: -8.5%;
-	left: 0%;
-	padding: 0px;
-}
-
-.ProjectDate {
-	color: #F5F5F5DF;
-	text-align: center;
-	font-size: 115%;
 	line-height: 100%;
 	position: relative;
 	height: 1em;
 	width: 100%;
-	top: 2%;
 	left: 0%;
 	padding: 0px;
 }
 
-.ProjectDescription {
-	color: #F5F5F5DF;
-	text-align: left;
-	font-size: 95%;
-	line-height: 100%;
-	position: relative;
-	height: 1em;
-	width: 97%;
-	top: 2%;
-	left: 0%;
-	padding-left: 3%;
+#TXNerd {
+	left: 38.5%;
+}
+
+#JobCompany {
+	font-size: 80%;
+	top: 1.5%;
+}
+
+#JobDate {
+	font-size: 50%;
+	top: 2.5%;
+}
+
+#JobPosition {
+	font-size: 50%;
+	top: 3.5%;
+}
+
+#JobDescription {
+	font-size: 46%;
+	top: 4.5%;
 }
