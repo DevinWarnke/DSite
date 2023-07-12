@@ -88,7 +88,7 @@ body {
 }
 
 .JobData {
-	background-color: #2C2C48DD;
+	background-color: #3C3C58DD;
 	color: #F5F5F5DD;
 	text-align: left;
 	font-size: 145%;
@@ -105,11 +105,13 @@ body {
 
 .JobIcon {
 	position: relative;
-	aspect-ratio: 365/301;
+	aspect-ratio: 1799/801;
 	width: 100%;
 	top: 0%;
 	left: 0%;
 	padding: 0px;
+	padding-top: 15%;
+	padding-bottom: 15%;
 	border-radius: 15px 15px 0px 0px;
 	border: 2px solid #595B70DD;
 	margin: -2px;
@@ -126,7 +128,7 @@ body {
 	padding: 0px;
 }
 
-#TXNerd {
+#OReilly {
 	left: 38.5%;
 }
 
