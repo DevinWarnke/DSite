@@ -1,7 +1,12 @@
 body {
 	background-color: #373536;
 	background-image: url(../Images/EducationBackground.jpg);
-	background-size: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position-y: 12%;
+	background-position-x: 50%;
+	height: 100vh;
+	width: 100vw;
 	padding: 0;
 	margin: 0;
 }
@@ -20,20 +25,38 @@ body {
 
 .Button {
 	background-color: #2C2C48CD;
-	color: #F5F5F5DD;
+	color: #F5F5F500;
 	text-align: center;
 	text-decoration: underline;
-	font-size: 125%;
+	font-size: 1.3vw;
 	line-height: 0%;
 	position: absolute;
 	height: 1em;
-	width: 7.5%;
-	top: 1%;
+	width: 6%;
+	top: 1.4%;
 	padding-top: 1%;
 	padding-bottom: 1%;
-	border-radius: 25px 25px 25px 25px;
-	border: 2px solid #64516DDD;
-	margin: -2px;
+	border-radius: 3vw;
+	border: 0.25vw solid #64516DDD;
+	margin: -0.25vw;
+}
+
+.Icon {
+	position: absolute;
+	width: 32%;
+	height: 60%;
+	top: 20%;
+	left: 36.5%;
+	margin: 0px;
+	fill: #F5F5F5DD;
+}
+
+#LeftArrow {
+	left: 34%;
+}
+
+#RightArrow {
+	left: 37.5%;
 }
 
 .Button:hover {
@@ -45,11 +68,11 @@ body {
 }
 
 #Home {
-	right: 17.5%;
+	right: 16%;
 }
 
 #Next {
-	right: 0.5%;
+	right: 2%;
 }
 
 #Back {

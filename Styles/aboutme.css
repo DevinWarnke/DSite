@@ -1,7 +1,12 @@
 body {
 	background-color: #373536;
 	background-image: url(../Images/AboutMeBackground.jpg);
-	background-size: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position-y: 12%;
+	background-position-x: 50%;
+	height: 100vh;
+	width: 100vw;
 	padding: 0;
 	margin: 0;
 }
@@ -20,20 +25,38 @@ body {
 
 .Button {
 	background-color: #2C2C48CD;
-	color: #F5F5F5DD;
+	color: #F5F5F500;
 	text-align: center;
 	text-decoration: underline;
-	font-size: 125%;
+	font-size: 1.3vw;
 	line-height: 0%;
 	position: absolute;
 	height: 1em;
-	width: 7.5%;
-	top: 1%;
+	width: 6%;
+	top: 1.4%;
 	padding-top: 1%;
 	padding-bottom: 1%;
-	border-radius: 25px 25px 25px 25px;
-	border: 2px solid #64516DDD;
-	margin: -2px;
+	border-radius: 3vw;
+	border: 0.25vw solid #64516DDD;
+	margin: -0.4vw;
+}
+
+.Icon {
+	position: absolute;
+	width: 32%;
+	height: 60%;
+	top: 20%;
+	left: 36.5%;
+	margin: 0px;
+	fill: #F5F5F5DD;
+}
+
+#LeftArrow {
+	left: 34%;
+}
+
+#RightArrow {
+	left: 37.5%;
 }
 
 .Button:hover {
@@ -45,11 +68,11 @@ body {
 }
 
 #Home {
-	right: 17.5%;
+	right: 16%;
 }
 
 #Next {
-	right: 0.5%;
+	right: 2%;
 }
 
 #Back {
@@ -59,7 +82,7 @@ body {
 .Header {
 	color: #F5F5F5DD;
 	text-align: center;
-	font-size: 370%;
+	font-size: 3.4vw;
 	line-height: 100%;
 	position: absolute;
 	height: 1em;
@@ -91,13 +114,13 @@ body {
 .Description {
 	color: #F5F5F5DD;
 	text-align: left;
-	font-size: 210%;
+	font-size: 1.4vw;
 	line-height: 100%;
 	position: absolute;
 	height: 100%;
-	width: 77.25%;
+	width: 72.25%;
 	top: 1.75%;
-	left: 21.5%;
+	left: 26.5%;
 	padding: 0px;
 	margin: 0px;
 }
@@ -105,7 +128,7 @@ body {
 .Portrait {
 	position: absolute;
 	aspect-ratio: 365/301;
-	width: 20.5%;
+	width: 25.5%;
 	top: 0%;
 	left: 0%;
 	padding: 0px;
@@ -118,12 +141,12 @@ body {
 .ContactInfo {
 	color: #F5F5F5DD;
 	text-align: center;
-	font-size: 135%;
+	font-size: 1.3vw;
 	line-height: 100%;
 	position: absolute;
 	height: 1em;
-	width: 20.5%;
-	top: 45%;
+	width: 25.5%;
+	top: 51.5%;
 	left: 0%;
 	padding: 0px;
 	margin: 0px;
@@ -132,20 +155,19 @@ body {
 .ContactInfoEntry {
 	color: #F5F5F5DD;
 	text-align: left;
-	font-size: 93%;
+	font-size: 1vw;
 	line-height: 100%;
 	position: absolute;
 	height: 1em;
-	top: 50%;
 	left: 0.5%;	
 	padding: 0px;
 	margin: 0px;
 }
 
 #Phone {
-	top: 52%;
+	top: 58%;
 }
 
 #Email {
-	top: 56%;
+	top: 62%;
 }
