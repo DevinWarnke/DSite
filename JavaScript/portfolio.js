@@ -43,8 +43,13 @@ function PhoneVertical() {
 		Elements.forEach(Element => {
 			Element.style.fontSize = "9vw";
 			Element.style.width = "80vw";
+			Element.style.height = "9vw";
 			Element.style.left = "10%";
-			Element.style.top = "15vh";
+			Element.style.position = "relative";
+			Element.style.padding = "0px";
+			Element.style.margin = "0px";
+			Element.style.marginBottom = "1vh";
+			Element.style.top = "14.5vh";
 		});
 	});
 	
@@ -52,10 +57,14 @@ function PhoneVertical() {
 		Elements = document.querySelectorAll(".PortfolioBox");
 		
 		Elements.forEach(Element => {
+			Element.style.fontSize = "10vw";
 			Element.style.width = "90vw";
 			Element.style.height = "75vh";
 			Element.style.left = "5vw";
-			Element.style.top = "20vh";
+			Element.style.position = "relative";
+			Element.style.top = "14.5vh";
+			Element.style.border = "0.6vw solid #122247D3";
+			Element.style.margin = "-0.6vw";
 			console.log(Element);
 		});
 	});
@@ -95,9 +104,9 @@ function PhoneVertical() {
 			Element.style.width = "30%";
 			Element.style.left = "10%";
 			Element.style.right = "unset";
-			Element.style.border = "0.55vw solid #595B70DD";
+			Element.style.border = "0.4vw solid #595B70DD";
+			Element.style.margin = "-0.4vw";
 			Element.style.borderradius = "3vw";
-			Element.style.margin = "-0.275vw";
 			console.log(Element);
 		});
 	});
@@ -111,9 +120,9 @@ function PhoneVertical() {
 			Element.style.width = "30%";
 			Element.style.left = "unset";
 			Element.style.right = "10%";
-			Element.style.border = "0.55vw solid #595B70DD";
+			Element.style.border = "0.4vw solid #595B70DD";
+			Element.style.margin = "-0.4vw";
 			Element.style.borderradius = "3vw";
-			Element.style.margin = "-0.275vw";
 			console.log(Element);
 		});
 	});
@@ -133,9 +142,9 @@ function PhoneVertical() {
 		Elements.forEach(Element => {
 			Element.style.height = "30%";
 			Element.style.width = "40%";
-			Element.style.border = "0.55vw solid #595B70DD";
+			Element.style.border = "0.4vw solid #595B70DD";
+			Element.style.margin = "-0.4vw";
 			Element.style.borderRadius = "3vw 3vw";
-			Element.style.margin = "-0.275vw";
 			console.log(Element);
 		});
 	});
@@ -278,7 +287,8 @@ function PhoneVertical() {
 			Element.style.width = "16vw";
 			Element.style.height = "1.5em";
 			Element.style.top = "1vh";
-			Element.style.border = "0.55vw solid #64516DDD";
+			Element.style.border = "0.4vw solid #64516DDD";
+			Element.style.margin = "-0.4vw";
 		});
 	});
 	

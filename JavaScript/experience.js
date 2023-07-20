@@ -43,8 +43,13 @@ function PhoneVertical() {
 		Elements.forEach(Element => {
 			Element.style.fontSize = "9vw";
 			Element.style.width = "80vw";
+			Element.style.height = "9vw";
 			Element.style.left = "10%";
-			Element.style.top = "15vh";
+			Element.style.position = "relative";
+			Element.style.padding = "0px";
+			Element.style.margin = "0px";
+			Element.style.marginBottom = "1vh";
+			Element.style.top = "14.5vh";
 		});
 	});
 	
@@ -52,10 +57,14 @@ function PhoneVertical() {
 		Elements = document.querySelectorAll(".ExperienceBox");
 		
 		Elements.forEach(Element => {
+			Element.style.fontSize = "10vw";
 			Element.style.width = "80vw";
 			Element.style.height = "60vh";
 			Element.style.left = "10vw";
-			Element.style.top = "20vh";
+			Element.style.position = "relative";
+			Element.style.top = "14.5vh";
+			Element.style.border = "0.6vw solid #595B707D";
+			Element.style.margin = "-0.6vw";
 			console.log(Element);
 		});
 	});
@@ -70,7 +79,7 @@ function PhoneVertical() {
 			Element.style.left = "15%";
 			Element.style.border = "0.55vw solid #595B70DD";
 			Element.style.borderradius = "3vw";
-			Element.style.margin = "-0.275vw";
+			Element.style.margin = "-0.55vw";
 			console.log(Element);
 		});
 	});
@@ -131,7 +140,8 @@ function PhoneVertical() {
 			Element.style.width = "16vw";
 			Element.style.height = "1.5em";
 			Element.style.top = "1vh";
-			Element.style.border = "0.55vw solid #64516DDD";
+			Element.style.border = "0.4vw solid #64516DDD";
+			Element.style.margin = "-0.4vw";
 		});
 	});
 	

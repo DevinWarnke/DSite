@@ -41,11 +41,16 @@ function PhoneVertical() {
 		const Elements = document.querySelectorAll(".Header");
 		
 		Elements.forEach(Element => {
-			Element.style.fontSize = "10vw";
+			Element.style.fontSize = "9vw";
 			Element.style.width = "80vw";
+			Element.style.height = "9vw";
 			Element.style.left = "10%";
-			Element.style.top = "10vh";
-			Element.innerHTML = "Hello.<br>I'm devin.";
+			Element.innerHTML = "Hello.<br>I'm Devin.";
+			Element.style.position = "relative";
+			Element.style.padding = "0px";
+			Element.style.margin = "0px";
+			Element.style.marginBottom = "1vh";
+			Element.style.top = "calc(14.5vh - 9vw)";
 		});
 	});
 	
@@ -53,10 +58,14 @@ function PhoneVertical() {
 		Elements = document.querySelectorAll(".DescriptionBox");
 		
 		Elements.forEach(Element => {
-			Element.style.width = "72.25vw";
+			Element.style.fontSize = "9vw";
+			Element.style.width = "80vw";
 			Element.style.height = "60vh";
-			Element.style.left = "13.875vw";
-			Element.style.top = "20vh";
+			Element.style.left = "10vw";
+			Element.style.position = "relative";
+			Element.style.top = "14.5vh";
+			Element.style.border = "0.7vw solid #1E3057";
+			Element.style.margin = "-0.7vw";
 			console.log(Element);
 		});
 	});
@@ -65,7 +74,7 @@ function PhoneVertical() {
 		Elements = document.querySelectorAll(".Description");
 		
 		Elements.forEach(Element => {
-			Element.style.top = "27%";
+			Element.style.top = "25%";
 			Element.style.height = "69%";
 			Element.style.width = "95%";
 			Element.style.left = "2.5%";
@@ -93,7 +102,7 @@ function PhoneVertical() {
 		Elements = document.querySelectorAll(".ContactInfoEntry");
 		
 		Elements.forEach(Element => {
-			Element.style.fontSize = "2.5vw";
+			Element.style.fontSize = "2.9vw";
 			Element.style.width = "48%";
 			Element.style.height = "2.2em";
 			Element.style.top = "1%";
@@ -108,8 +117,8 @@ function PhoneVertical() {
 		
 		Elements.forEach(Element => {
 			Element.style.width = "48%";
-			Element.style.height = "2.2em";
-			Element.style.top = "6.2%";
+			Element.style.height = "2em";
+			Element.style.top = "6.1%";
 			Element.style.left = "52%";
 			Element.innerHTML = "Phone:<br>903-904-2077";
 			console.log(Element);
@@ -121,8 +130,8 @@ function PhoneVertical() {
 		
 		Elements.forEach(Element => {
 			Element.style.width = "48%";
-			Element.style.height = "2.2em";
-			Element.style.top = "11%";
+			Element.style.height = "2em";
+			Element.style.top = "12%";
 			Element.style.left = "52%";
 			Element.innerHTML = "Email:<br>warnkedevin@yahoo.com";
 			console.log(Element);
@@ -146,7 +155,8 @@ function PhoneVertical() {
 			Element.style.width = "16vw";
 			Element.style.height = "1.5em";
 			Element.style.top = "1vh";
-			Element.style.border = "0.55vw solid #64516DDD";
+			Element.style.border = "0.4vw solid #64516DDD";
+			Element.style.margin = "-0.4vw";
 		});
 	});
 	
