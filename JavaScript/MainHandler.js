@@ -8,7 +8,7 @@ var Page;
 
 window.onload = function() {
 	FixStuff();
-	Page = Math.round(window.scrollY / window.innerHeight) + 1;
+	Page = Math.min(Math.max(Math.round(window.scrollY / innerHeight) + 1, 1), 5);
 }
 
 window.addEventListener("wheel", ScrollStart, {passive: false});
@@ -22,11 +22,3 @@ addEventListener("resize", (event) => {
 	GotoPage(Page, true);
 	FixStuff();
 });
-
-if (navigator.userAgent.includes("Chrome")) {
-	console.log("Chrome");
-} else if (navigator.userAgent.includes("Mozilla")) {
-	console.log("Mozilla");
-} else if (navigator.userAgent.includes("Safari")) {
-	console.log("Safari");
-}
