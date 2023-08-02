@@ -6,15 +6,134 @@
 		<link rel="icon" type="images/x-icon" href="Icons/favicon.ico" />
 	</head>
 	<body>
-		<div class="Main" id="Main">
-			<script src="JavaScript/index.js"></script>
-			<div class="Blur"></div>
-			<p class="Header" id="Header">Devin Warnke</p>
-			<div class="ButtonContainer">
-				<button type="button" class="MainButton" id="AboutMe" onclick="window.location.href='https://devinwarnke.com/aboutme';">About me</button>
-				<button type="button" class="MainButton" id="Education" onclick="window.location.href='https://devinwarnke.com/education';">Education</button>
-				<button type="button" class="MainButton" id="Portfolio" onclick="window.location.href='https://devinwarnke.com/portfolio';">Portfolio</button>
-				<button type="button" class="MainButton" id="Experience" onclick="window.location.href='https://devinwarnke.com/experience';">Experience</button>
+		<script src="JavaScript/JQuery/jquery-3.7.0.min.js"></script>
+		<script src="JavaScript/textFit/textFit.js"></script>
+		<script src="JavaScript/MainFunctions.js"></script>
+		<script src="JavaScript/ViewFunctions.js"></script>
+		<script src="JavaScript/MainHandler.js"></script>
+		<div class="PageContainer">
+			<div class="Page" id="IndexPage">
+				<p class="MainHeader" id="MainHeader">Devin Warnke</p>
+				<div class="ButtonContainer">
+					<button type="button" class="MainButton" id="MainAboutMeButton" onClick="GotoPage(2);">About me</button>
+					<button type="button" class="MainButton" id="MainEducationButton" onClick="GotoPage(3);">Education</button>
+					<button type="button" class="MainButton" id="MainExperienceButton" onClick="GotoPage(4);">Experience</button>
+					<button type="button" class="MainButton" id="MainPortfolioButton" onClick="GotoPage(5);">Portfolio</button>
+				</div>
+				<button type="button" class="DownButton" id="IndexButtonDown" onClick="GotoPage(Page+1);"><img class="DownArrowIcon" src="Icons/DownArrow.png"></button>
+			</div>
+			<div class="Page" id="AboutMePage">
+				<p class="Header" id="AboutMeHeader">Hello. I'm Devin Warnke.</p>
+				<div class="ContentBox" id="DescriptionBox">
+					<img class="Portrait" src="Images/Portrait.png" alt="Umm..">
+					<p class="ContactInfo">Contact Info</p>
+					<p class="ContactInfoEntry" id="Phone">Phone: 903-904-2077</p>
+					<p class="ContactInfoEntry" id="Email">Email: warnkedevin@yahoo.com</p>
+					<p class="Description">My name is Devin Warnke. I am an energetic young man that loves helping others. My passions are computers and everything related to technology. I love all the new advancements in the world and seeing what new products can be developed from it. I currently spend a lot of my time writing code and doing various projects for myself and others. I take pride in writing high quality code and making sure everything works flawlessly. One of my lifetime goals is to write code that many users and large corporations use and have good experiences with. To work towards that goal, I am always improving on my past projects, learning new things and applying new techniques and ideas to everything I do. I am always trying new languages and improving my skills.</p>
+				</div>
+				<button type="button" class="UpButton" id="AboutMeButtonUp" onClick="GotoPage(Page-1);"><img class="UpArrowIcon" src="Icons/UpArrow.png"></button>
+				<button type="button" class="DownButton" id="AboutMeButtonDown" onClick="GotoPage(Page+1);"><img class="DownArrowIcon" src="Icons/DownArrow.png"></button>
+			</div>
+			<div class="Page" id="EducationPage">
+				<p class="Header" id="EducationHeader">My Education.</p>
+				<div class="ContentBox" id="EducationBox">
+					<div class="SchoolData" id="TVCC">
+						<div class="SchoolIconContainer">
+							<img class="SchoolIcon" id="SchoolIcon" src="Images/TVCCIcon.png" alt="Umm..">
+						</div>
+						<div class="SchoolInfoContainer">
+							<p class="SchoolDataEntry" id="SchoolName">TVCC</p>
+							<p class="SchoolDataEntry" id="SchoolDegree">Associate's in IT.</p>
+							<p class="SchoolDataEntry" id="SchoolDate">2020 - 2022</p>
+							<p class="SchoolDataEntry" id="SchoolGPA">3.53 GPA</p>
+							<p class="SchoolDataDescEntry" id="SchoolDescription">At TVCC I did my required core college classes as well as any needed prerequisites for the classes I planned on taking.</p>
+						</div>
+					</div>
+					<div class="SchoolData" id="UTTyler">
+						<div class="SchoolIconContainer">
+							<img class="SchoolIcon" id="SchoolIcon" src="Images/UTTylerIcon.png" alt="Umm..">
+						</div>
+						<div class="SchoolInfoContainer">
+							<p class="SchoolDataEntry" id="SchoolName">UT Tyler</p>
+							<p class="SchoolDataEntry" id="SchoolDegree">Bachelor's in IT.</p>
+							<p class="SchoolDataEntry" id="SchoolDate">2022 - 2024</p>
+							<p class="SchoolDataEntry" id="SchoolGPA">3.33 GPA</p>
+							<p class="SchoolDataDescEntry" id="SchoolDescription">I am here at UT Tyler to further enhance my goals in computing, with my major in Information Technology and my minor in Cybersecurity. In my time at UT Tyler, I gained knowledge on topics from SQL databases to C++ and Java.</p>
+						</div>
+					</div>
+				</div>
+				<button type="button" class="UpButton" id="EducationButtonUp" onClick="GotoPage(Page-1);"><img class="UpArrowIcon" src="Icons/UpArrow.png"></button>
+				<button type="button" class="DownButton" id="EducationButtonDown" onClick="GotoPage(Page+1);"><img class="DownArrowIcon" src="Icons/DownArrow.png"></button>
+			</div>
+			<div class="Page" id="PortfolioPage">
+				<p class="Header" id="PortfolioHeader">My Portfolio.</p>
+				<div class="ContentBox" id="PortfolioBox">
+					<p class="PortfolioLabel" id="ExperienceLabel">Experience</p>
+					<ul class="Experience">
+						<li class="ListText">6 years of Lua</li>
+						<li class="ListText">4 years of C#</li>
+						<li class="ListText">4 years of Python</li>
+						<li class="ListText">3 years of JS</li>
+						<li class="ListText">3 years of C++</li>
+						<li class="ListText">3 years of Java</li>
+						<li class="ListText">2 years of SQL</li>
+						<li class="ListText">1 year of HTML</li>
+						<li class="ListText">1 year of CSS</li>
+						<li class="ListText">1 year of Rust</li>
+					</ul>
+					<p class="PortfolioLabel" id="CertificationLabel">Certifications</p>
+					<ul class="Certifications">
+						<li class="ListText">C++</li>
+						<li class="ListText">Java</li>
+						<li class="ListText">JavaScript</li>
+						<li class="ListText">Lua</li>
+						<li class="ListText">Python</li>
+						<li class="ListText">SQL</li>
+					</ul>
+					<div class="ProjectData" id="Project1">
+						<img class="ProjectIcon" src="Images/Website.jpg" alt="Umm..">
+						<p class="ProjectName">This Website</p>
+						<p class="ProjectDate">2023</p>
+						<p class="ProjectDescription">I developed this website entirely myself using HTML, CSS and JavaScript.</p>
+					</div>
+					<div class="ProjectData" id="Project2">
+						<img class="ProjectIcon" src="Images/Python.png" alt="Umm..">
+						<p class="ProjectName">Python Market Bot</p>
+						<p class="ProjectDate">2023</p>
+						<p class="ProjectDescription">I used Python to develop a game market bot that uses HTTP requests to get data from the internet and displays it in an easy to read format.</p>
+					</div>
+					<div class="ProjectData" id="Project3">
+						<img class="ProjectIcon" src="Images/Rust.png" alt="Umm..">
+						<p class="ProjectName">Rust Market Bot</p>
+						<p class="ProjectDate">2023</p>
+						<p class="ProjectDescription">I rewrote the Python bot in Rust, to further develop my skills and gain experience in new languages.</p>
+					</div>
+					<div class="ProjectData" id="Project4">
+						<img class="ProjectIcon" src="Images/SQL.png" alt="Umm..">
+						<p class="ProjectName">SQL Databases</p>
+						<p class="ProjectDate">2023</p>
+						<p class="ProjectDescription">I solved problems, designed and developed SQL databases for multiple different scenarios, as well as learned proper techniques and methodologies in handling data.</p>
+					</div>
+				</div>
+				<button type="button" class="UpButton" id="PortfolioButtonUp" onClick="GotoPage(Page-1);"><img class="UpArrowIcon" src="Icons/UpArrow.png"></button>
+				<button type="button" class="DownButton" id="PortfolioButtonDown" onClick="GotoPage(Page+1);"><img class="DownArrowIcon" src="Icons/DownArrow.png"></button>
+			</div>
+			<div class="Page" id="ExperiencePage">
+				<p class="Header" id="ExperienceHeader">My Experience.</p>
+				<div class="ContentBox" id="ExperienceBox">
+					<div class="JobData" id="OReilly">
+						<div class="JobIconContainer">
+							<img class="JobIcon" id="JobIcon" src="Images/OReilly.png" alt="Umm..">
+						</div>
+						<div class="JobInfoContainer">
+							<p class="JobDataEntry" id="JobCompany">O'Reilly Auto Parts</p>
+							<p class="JobDataEntry" id="JobDate">2019 - Present</p>
+							<p class="JobDataEntry" id="JobPosition">Manager</p>
+							<p class="JobDataEntry" id="JobDescription">Make sure everyone is meeting sales goals, ensuring the store is in good condition and solving issues and making sure everything runs smoothly.</p>
+						</div>
+					</div>
+				</div>
+				<button type="button" class="UpButton" id="ExperienceButtonUp" onClick="GotoPage(Page-1);"><img class="UpArrowIcon" src="Icons/UpArrow.png"></button>
 			</div>
 		</div>
 	</body>

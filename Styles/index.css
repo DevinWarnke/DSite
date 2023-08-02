@@ -1,104 +1,754 @@
-#Main {
-	background-color: #373536;
-	background-image: url(../Images/IndexBackground2.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position-y: 12%;
-	background-position-x: 50%;
-	height: 100vh;
-	width: 100vw;
-	padding: 0;
-	margin: 0;
-}
-
 * {
 	font: 16px Verdana, sans-serif;
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+}
+
+html {
+	scrollbar-width: none;
+}
+
+body {
+	scrollbar-width: none;
+	background-image: url(../Images/Background.jpg);
+	background-size: 100% auto;
+	background-repeat: repeat;
+}
+
+/* ------------------------------------------------------Generic Page------------------------------------------------------ */
+
+.PageContainer {
 	padding: 0;
 	margin: 0;
 }
 
-
-.Blur {
-	backdrop-filter: blur(3px);
-	color: #F5F5F5DD;
-	text-align: center;
-	font-size: 750%;
-	line-height: 100%;
-	position: absolute;
-	height: 70%;
-	width: 70%;
-	top: 10%;
-	left: 15%;
-	padding: 0px;
-	border-radius: 150px 150px 150px 150px;
-	z-index: -1;
-	opacity: 0%;
+.Page {
+	width: 100%;
+	height: 100vh;
+	padding: 0;
+	margin: 0;
+	background-color: #30303000;
+	backdrop-filter: brightness(130%);
 }
 
 .Header {
-	background-color: #2C2C48DD;
 	color: #F5F5F5DD;
 	text-align: center;
-	font-size: 7vw;
+	font-size: 6vh;
 	line-height: 100%;
+	position: relative;
+	margin-bottom: 0vh;
+	height: 6%;
+}
+
+
+.ContentBox {
+	background: #45454599;
+	color: #F5F5F5DD;
+	text-align: left;
+	font-size: 150%;
+	line-height: 0%;
+	position: relative;
+	padding: 0px;
+	border-radius: 1.4vw 1.4vw 1.4vw 1.4vw;
+	border: 0.15vw solid #AAAAAAAA;
+	margin: 0vw -0.15vw 0vw -0.15vw;
+	filter: drop-shadow(0px 0px 0.8vw #777777);
+}
+
+.DownButton {
+	background-color: transparent;
+	color: #F2F5F500;
 	position: absolute;
+	height: 6%;
+	width: 11%;
+	top: 90.5%;
+	left: 44.5%;
+	border: 0px;
+	cursor: pointer;
+}
+
+.DownButton:hover {
+	filter: drop-shadow(0px 0px 0.6vw #666666) brightness(85%);
+	transition-property: top;
+	transition-duration: 0.1s;
+	transition-timing-function: ease-out;
+	top: 91%;
+}
+
+.DownButton:active {
+	filter: drop-shadow(0px 0px 0.6vw #000000) brightness(65%);
+	transition-property: opacity;
+	transition-duration: 0.2s;
+	transition-timing-function: linear;
+	opacity: 0;
+}
+
+.DownArrowIcon {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0%;
+	left: 0%;
+	margin: 0px;
+	opacity: 0.566;
+}
+
+.UpButton {
+	background-color: transparent;
+	color: #F2F5F500;
+	position: absolute;
+	height: 6%;
+	width: 11%;
+	bottom: 90.5%;
+	left: 44.5%;
+	border: 0px;
+	cursor: pointer;
+}
+
+.UpButton:hover {
+	filter: drop-shadow(0px 0px 0.6vw #666666) brightness(85%);
+	transition-property: top;
+	transition-duration: 0.1s;
+	transition-timing-function: ease-out;
+	bottom: 91%;
+}
+
+.UpButton:active {
+	filter: drop-shadow(0px 0px 0.6vw #000000) brightness(65%);
+	transition-property: opacity;
+	transition-duration: 0.2s;
+	transition-timing-function: linear;
+	opacity: 0;
+}
+
+.UpArrowIcon {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0%;
+	left: 0%;
+	margin: 0px;
+	opacity: 0.566;
+}
+
+/* ------------------------------------------------------Positioning------------------------------------------------------ */
+
+
+
+/* ------------------------------------------------------Defaults------------------------------------------------------ */
+
+
+
+/* ------------------------------------------------------Index------------------------------------------------------ */
+
+.MainHeader {
+	background-color: #45454599;
+	color: #F5F5F5DD;
+	text-align: center;
+	font-size: 10vh;
+	line-height: 100%;
+	position: relative;
 	height: 1em;
-	width: 60vw;
-	top: 20vh;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	width: 60%;
+	top: 29%;
 	left: 20%;
-	padding-top: 4%;
-	padding-bottom: 4%;
-	border-radius: 25px 25px 25px 25px;
-	border: 2px solid #75627EDD;
-	margin: -2px;
+	border-radius: 1.4vw 1.4vw 1.4vw 1.4vw;
+	border: 0.3vw solid #AAAAAAAA;
+	margin: 0vw -0.3vw 0vw -0.3vw;
+	filter: drop-shadow(0px 0px 0.8vw #777777);
 }
 
 .ButtonContainer {
-	position: absolute;
-	height: 0%;
-	width: 60%;
-	top: 60%;
-	left: 20%;
-	margin: 0px;
+	position: relative;
+	height: 9%;
+	width: 65%;
+	top: 38%;
+	left: 17.5%;
 }
 
 .MainButton {
-	background-color: #2C2C48DD;
+	background-color: #45454599;
 	color: #F5F5F5DD;
 	text-align: center;
-	text-decoration: underline;
-	font-size: 2.35vw;
+	font-size: 4.5vh;
 	line-height: 0%;
 	position: absolute;
 	height: 2em;
 	width: 14vw;
-	top: -2vh;
-	padding: 0px;
-	border-radius: 25px 25px 25px 25px;
-	border: 2px solid #75627EDD;
-	margin: -2px;
+	border-radius: 1vw 1vw 1vw 1vw;
+	border: 0.25vw solid #AAAAAAAA;
+	margin: 0vw -0.25vw 0vw -0.25vw;
+	filter: drop-shadow(0px 0px 0.6vw #777777);
+	padding-left: 1rem;
+	padding-right: 1rem;
+	cursor: pointer;
+	
+	.textFitted {
+		text-decoration: underline;
+	}
 }
 
 .MainButton:hover {
-	filter: brightness(85%);
+	filter: drop-shadow(0px 0px 0.6vw #666666) brightness(85%);
+	top: 1.5%;
 }
 
 .MainButton:active {
-	filter: brightness(65%);
+	filter: drop-shadow(0px 0px 0.6vw #000000) brightness(65%);
+	top: 3.5%;
 }
 
-#AboutMe {
+
+#MainAboutMeButton {
 	left: 0%;
 }
 
-#Education {
+#MainEducationButton {
 	left: 25.62%;
 }
 
-#Portfolio {
+#MainExperienceButton {
 	right: 25.62%;
 }
 
-#Experience {
+#MainPortfolioButton {
 	right: 0%;
+}
+
+/* ------------------------------------------------------About Me------------------------------------------------------ */
+
+#AboutMeHeader {
+	width: 64%;
+	top: 20%;
+	left: 18%;
+}
+
+#DescriptionBox {
+	background: #45454599;
+	color: #F5F5F5DD;
+	text-align: left;
+	font-size: 150%;
+	line-height: 0%;
+	position: relative;
+	padding: 0px;
+	border-radius: 1.4vw 1.4vw 1.4vw 1.4vw;
+	border: 0.15vw solid #AAAAAAAA;
+	margin: -0.15vw;
+	filter: drop-shadow(0px 0px 0.8vw #777777);
+	height: 47%;
+	width: 64%;
+	top: 20.5%;
+	left: 18%;
+}
+
+.Description {
+	color: #F5F5F5DD;
+	text-align: left;
+	font-size: 1.4vw;
+	line-height: 100%;
+	position: absolute;
+	height: 97%;
+	width: 72.25%;
+	top: 1.45%;
+	left: 26.5%;
+	padding: 0px;
+	margin: 0px;
+}
+
+.Portrait {
+	position: relative;
+	aspect-ratio: 365/301;
+	width: 25.5%;
+	top: 0%;
+	left: 0%;
+	border-radius: 1vw 1vw 1vw 1vw;
+	border: 0.15vw solid #AAAAAAAA;
+	margin: -0.12vw;
+}
+
+.ContactInfo {
+	color: #F5F5F5DD;
+	text-align: center;
+	font-size: 1.3vw;
+	line-height: 100%;
+	position: relative;
+	height: 1.3em;
+	width: 25.5%;
+	top: 1%;
+	left: 0%;
+	padding: 0px;
+	margin: 0px;
+}
+
+.ContactInfoEntry {
+	color: #F5F5F5DD;
+	text-align: left;
+	font-size: 1vw;
+	line-height: 100%;
+	position: relative;
+	height: 1.15em;
+	width: 25.5%;
+	top: 0%;
+	left: 0.5%;	
+	padding: 0px;
+	margin: 0px;
+}
+
+#Phone {
+	top: 1.5%;
+}
+
+#Email {
+	top: 1.5%;
+}
+
+
+/* ------------------------------------------------------Education------------------------------------------------------ */
+
+#EducationHeader {
+	width: 64%;
+	top: 18.5%;
+	left: 18%;
+}
+
+#EducationBox {
+	height: 50%;
+	width: 64%;
+	top: 19%;
+	left: 18%;
+}
+
+.SchoolData {
+	background-color: #454545;
+	color: #F5F5F5DD;
+	text-align: left;
+	font-size: 145%;
+	line-height: 0%;
+	position: absolute;
+	height: 60%;
+	width: 45%;
+	top: 20%;
+	padding: 0px;
+	border-radius: 1vw 1vw 1vw 1vw;
+	border: 0.17vw solid #383838;
+	margin: 0px 0px -0.17vw 0px;
+	filter: drop-shadow(0px 0px 0.4vw #333333);
+}
+
+.SchoolIconContainer {
+	background-color: #45454500;
+	color: #F5F5F5DD;
+	text-align: left;
+	aspect-ratio: 365/301;
+	position: absolute;
+	border-radius: 0.85vw 0vw 0vw 0.85vw;
+	height: 100%;
+	width: auto;
+	top: 0%;
+	padding: 0px;
+}
+
+.SchoolIcon {
+	position: relative;
+	aspect-ratio: 365/301;
+	height: 100%;
+	left: 0%;
+	padding: 0px;
+	border-radius: 1vw 0vw 0vw 1vw;
+	margin: 0px;
+	opacity: 100%;
+}
+
+.SchoolInfoContainer {
+	background-color: #45454500;
+	color: #F5F5F5DD;
+	text-align: left;
+	font-size: 145%;
+	line-height: 0%;
+	position: absolute;
+	width: 37.2%;
+	height: 100%;
+	top: 0%;
+	left: 62.8%;
+	padding: 0px;
+}
+
+.SchoolDataEntry {
+	color: #F5F5F5DD;
+	text-align: center;
+	line-height: 100%;
+	position: relative;
+	height: 1em;
+	height: 20%;
+	width: 100%;
+	left: 0%;
+	padding: 0px;
+	border: 0.20vw solid #303030;
+	border-style: solid hidden hidden hidden;
+	margin-top: -0.20vw;
+	width: 90%;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.SchoolDataDescEntry {
+	color: #F5F5F5DD;
+	text-align: center;
+	line-height: 100%;
+	position: relative;
+	width: 100%;
+	left: 0%;
+	padding: 0px;
+	border-radius: 0vw 0vw 1vw 0vw;
+	border: 0.20vw solid #303030;
+	border-style: solid hidden hidden hidden;
+	margin-top: -0.20vw;
+	margin: 0px;
+}
+
+#SchoolName {
+	padding-bottom: 0px;
+	height: 18%;
+	border: 0vw solid #303030;
+	border-style: hidden hidden hidden hidden;
+	margin-top: 0;
+}
+
+#SchoolDegree {
+	height: 15%;
+}
+
+#SchoolDate {
+	height: 11%;
+	padding-bottom: 0.4em;
+}
+
+#SchoolDescription {
+	margin: 0px;
+	padding: 0px;
+	text-align: left;
+	width: 92%;
+	padding-top: 1%;
+	padding-left: 4%;
+	padding-right: 4%;
+}
+
+#SchoolGPA {
+	height: 10%;
+}
+
+#TVCC {
+	left: 3%;
+}
+
+#UTTyler {
+	right: 3%;
+}
+
+/* ------------------------------------------------------Portfolio------------------------------------------------------ */
+
+#PortfolioHeader {
+	width: 64%;
+	top: 12.25%;
+	left: 17.5%;
+}
+
+#PortfolioBox {
+	height: 62.5%;
+	width: 64%;
+	top: 12.75%;
+	left: 17.5%;
+}
+
+.PortfolioLabel {
+	color: #F5F5F5DF;
+	text-align: center;
+	font-size: 85%;
+	line-height: 100%;
+	position: absolute;
+	height: 1em;
+	width: 13%;
+	top: 2%;
+	right: 25%;
+	z-index: 1;
+}
+
+#CertificationLabel {
+	left: 25%;
+}
+
+.Certifications {
+	background-color: #454545;
+	color: #F5F5F5DF;
+	text-align: left;
+	line-height: 0%;
+	list-style-position: inside;
+	position: absolute;
+	height: 31%;
+	width: 13.4%;
+	top: 6%;
+	left: 25%;
+	padding: 0px;
+	border-radius: 1vw 1vw 1vw 1vw;
+	border: 0.17vw solid #383838;
+	margin: -0.17vw;
+	filter: drop-shadow(0px 0px 0.2vw #333333);
+}
+
+#ExperienceLabel {
+	right: 25%;
+}
+
+.Experience {
+	background-color: #454545;
+	color: #F5F5F5DF;
+	text-align: left;
+	line-height: 0%;
+	list-style-position: inside;
+	position: absolute;
+	height: 31%;
+	width: 13.4%;
+	top: 6%;
+	right: 25%;
+	padding: 0px;
+	border-radius: 1vw 1vw 1vw 1vw;
+	border: 0.17vw solid #383838;
+	margin: -0.17vw;
+	filter: drop-shadow(0px 0px 0.2vw #333333);
+}
+
+.ListText {
+	color: #F5F5F5DF;
+	text-align: left;
+	font-size: 95%;
+	line-height: 100%;
+	white-space: pre-wrap;
+	position: relative;
+	height: 8.4%;
+	width: 90%;
+	top: 2%;
+	left: 0%;
+	margin-left: 5%;
+	margin-right: 5%;
+	padding-bottom: 1.5%;
+}
+
+.ListText::before {
+	content: "";
+	margin-left: -0.6rem;
+}
+
+.ProjectData {
+	background-color: #454545;
+	color: #F5F5F5DF;
+	text-align: left;
+	line-height: 0%;
+	position: absolute;
+	height: 50%;
+	width: 18%;
+	top: 44.5%;
+	padding: 0px;
+	margin: 0px;
+	border-radius: 1vw 1vw 1vw 1vw;
+	border: 0.17vw solid #383838;
+	margin: -0.17vw;
+	filter: drop-shadow(0px 0px 0.2vw #333333);
+}
+
+#Project1 {
+	left: 8%;
+}
+
+#Project2 {
+	left: 30%;
+}
+
+#Project3 {
+	left: 52%;
+}
+
+#Project4 {
+	left: 74%;
+}
+
+.ProjectIcon {
+	position: relative;
+	aspect-ratio: 266/187;
+	width: 100%;
+	top: 0%;
+	left: 0%;
+	padding: 0px;
+	border-radius: 1vw 1vw 0vw 0vw;
+	border: 0.17vw solid #303030;
+	border-style: hidden hidden solid hidden;
+	margin: 0px 0px -0.17vw 0px;
+}
+
+.ProjectName {
+	color: #F5F5F5DF;
+	text-align: center;
+	font-size: 125%;
+	line-height: 100%;
+	position: absolute;
+	height: 1em;
+	width: 100%;
+	top: -8.5%;
+	left: 0%;
+	padding: 0px;
+}
+
+.ProjectName {
+	color: #F5F5F5DF;
+	text-align: center;
+	font-size: 115%;
+	line-height: 100%;
+	position: relative;
+	height: 1.2em;
+	width: 100%;
+	top: 0%;
+	left: 0%;
+	padding: 0px;
+	z-index: 1;
+	padding-top: 1.5%;
+	padding-bottom: 1.5%;
+	border: 0.20vw solid #353535;
+	border-style: hidden hidden solid hidden;
+}
+
+.ProjectDate {
+	color: #F5F5F5DF;
+	text-align: center;
+	font-size: 115%;
+	line-height: 100%;
+	position: relative;
+	height: 1.2em;
+	width: 100%;
+	top: 0%;
+	left: 0%;
+	padding: 0px;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	z-index: 1;
+	border: 0.20vw solid #353535;
+	border-style: hidden hidden solid hidden;
+	padding-bottom: 0.15em;
+}
+
+.ProjectDescription {
+	color: #F5F5F5DF;
+	text-align: left;
+	font-size: 95%;
+	line-height: 100%;
+	position: relative;
+	height: 1em;
+	width: 97%;
+	top: 0%;
+	left: 0%;
+	border-radius: 0vw 0vw 1vw 1vw;
+	padding-top: 1%;
+	padding-left: 3%;
+}
+
+/* ------------------------------------------------------Experience------------------------------------------------------ */
+
+#ExperienceHeader {
+	width: 34%;
+	top: 18.5%;
+	left: 33%;
+}
+
+#ExperienceBox {
+	height: 50%;
+	width: 34%;
+	top: 19%;
+	left: 33%;
+}
+
+.JobData {
+	background-color: #454545;
+	color: #F5F5F5DD;
+	text-align: left;
+	font-size: 145%;
+	line-height: 0%;
+	position: absolute;
+	height: 80%;
+	width: 46%;
+	top: 10.5%;
+	padding: 0px;
+	border-radius: 1vw 1vw 1vw 1vw;
+	border: 0.21vw solid #383838;
+	margin: -0.21vw;
+	filter: drop-shadow(0px 0px 0.4vw #333333);
+}
+
+.JobIconContainer {
+	position: relative;
+	width: 100%;
+	height: 20%;
+	padding: 0px;
+	border-radius: 1vw 1vw 0vw 0vw;
+	border: 0.22vw solid #303030;
+	border-style: hidden hidden solid hidden;
+}
+
+.JobIcon {
+	position: absolute;
+	width: 90%;
+	left: 5%;
+	padding: 0px;
+	padding-top: 15%;
+	padding-bottom: 15%;
+	border-radius: 1vw 1vw 0vw 0vw;
+}
+
+.JobInfoContainer {
+	position: relative;
+	width: 100%;
+	height: 30%;
+	padding: 0px;
+	border-radius: 0vw 0vw 1vw 1vw;
+}
+
+.JobDataEntry {
+	color: #F5F5F5DD;
+	text-align: center;
+	line-height: 100%;
+	position: relative;
+	padding: 0px;
+	height: 13%;
+	padding-top: 0%;
+	padding-bottom: 0.15rem;	
+	width: 100%;
+	left: 0%;
+	border: 0.20vw solid #303030;
+	border-style: hidden hidden solid hidden;
+}
+
+#OReilly {
+	left: 27%;
+}
+
+#JobCompany {
+	font-size: 80%;
+}
+
+#JobDate {
+	font-size: 50%;
+}
+
+#JobPosition {
+	font-size: 50%;
+}
+
+#JobDescription {
+	font-size: 43%;
+	padding: 0px;
+	width: 95%;
+	left: 2.5%;
+	border-radius: 0vw 0vw 1vw 1vw;
+	border: 0px;
 }
