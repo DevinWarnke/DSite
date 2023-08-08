@@ -11,7 +11,7 @@ html {
 
 body {
 	scrollbar-width: none;
-	background-image: url(../Images/Background.jpg);
+	background-image: url(../Images/Background.webp);
 	background-size: 100% auto;
 	background-repeat: repeat;
 }
